@@ -1,0 +1,73 @@
+:root {
+    --primary-font-family: "Yeseva One", serif;
+    --primary-color: #1F2B6C;
+    --secondary-color: #159EEC;
+    --accent-color: #BFD2F8;
+}
+
+nav {
+    background: var(--primary-color);
+    padding: 12px 0;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--primary-font-family);
+    color: var(--primary-color);
+}
+
+h1 span {
+    color: var(--secondary-color);
+}
+
+
+
+nav a {
+    transition: all .3s ease;
+}
+
+.active_page {
+    color: var(--secondary-color);
+}
+
+.nav_btns a {
+    background-color: var(--accent-color);
+    color: #1F2B6C;
+}
+
+.nav_btns {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search_btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav_btns a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.note p {
+    margin: 0;
+}
+
+.text_p {
+    color: var(--secondary-color);
+}
+
+.note i {
+    font-size: 1.5rem;
+}
