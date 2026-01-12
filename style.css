@@ -20,6 +20,10 @@ h2 {
     font-size: var(--primary-font-size);
 }
 
+p {
+    margin: 0;
+}
+
 /* initial set up end*/
 nav {
     background: var(--primary-color);
@@ -51,11 +55,6 @@ a {
     color: white;
 }
 
-
-.note p {
-    margin: 0;
-}
-
 .text_p {
     color: var(--secondary-color);
 }
@@ -77,4 +76,27 @@ a {
 
 p {
     font-size: 1.2rem;
+}
+
+/* hero section end  */
+
+.books {
+    margin-top: -2.5rem;
+    height: 5rem;
+}
+
+.book-1 {
+    background-color: var(--primary-color);
+}
+
+.book-2 {
+    background-color: var(--accent-color);
+}
+
+.book-3 {
+    background-color: var(--secondary-color);
+}
+
+.books img {
+    width: 2.2rem;
 }
