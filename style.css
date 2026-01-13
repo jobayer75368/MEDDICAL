@@ -88,8 +88,8 @@ p {
 /* hero section end  */
 
 .books {
-    margin-top: -2.5rem;
-    height: 5rem;
+    margin-top: -3rem;
+    height: 6rem;
 }
 
 .book-1 {
@@ -152,7 +152,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 12rem;
+    height: 13rem;
     gap: 5;
     border: 1px solid rgba(128, 128, 128, 0.097);
     transition: all .2s ease;
@@ -162,4 +162,125 @@ p {
     background-color: var(--primary-color);
     color: var(--accent-color);
     border-radius: .6rem;
+}
+
+/* appointment form start */
+.appoinment_head {
+    color: var(--secondary-color);
+}
+
+.appointment_form {
+    background: url(./Assets/images/appointment-bg.png) center / cover no-repeat;
+    height: 85vh;
+    width: 100%;
+}
+
+.appointment_form .bg {
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.737);
+}
+
+.appointment_form .bg .container {
+    gap: 8rem;
+}
+
+.appointment_form form {
+    height: 25rem;
+    background-color: var(--primary-color);
+}
+
+input:focus,
+textarea:focus {
+    border-radius: 5px;
+    outline: 2px solid rgba(0, 170, 255, 0.829);
+}
+
+select option {
+    background-color: var(--primary-color);
+}
+
+.submit {
+    border: none;
+    font-family: var(--secondary-font-family);
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    border-radius: 0 0 5px 5px;
+    transition: all .3s ease;
+}
+
+.submit:hover {
+    background-color: var(--secondary-color);
+}
+
+/* doctors section  */
+.dr-about {
+    background-color: var(--accent-color);
+}
+
+.doctors a {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+.doctors .carousel-indicators button,
+.news .carousel-indicators button {
+    background-color: var(--primary-color);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.news_date {
+    color: var(--secondary-color);
+}
+
+.contact_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15rem;
+    gap: .4rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.contact_content p {
+    font-size: 1.1rem;
+}
+
+.contact_content:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+footer,
+footer a {
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+}
+
+footer h2 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+footer button,
+footer input {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    height: 3rem;
+    border: none;
+    border-radius: .3rem;
+    padding: .7rem;
+}
+
+footer input {
+    width: 15rem;
+}
+
+footer button {
+    margin-left: -3rem;
 }
