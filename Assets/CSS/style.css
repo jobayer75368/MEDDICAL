@@ -75,7 +75,10 @@ a {
 /* hero section start  */
 
 #hero {
-    background: url(./Assets/images/hero_bg.png) center / cover no-repeat;
+    background: url(../images/hero_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 85vh;
     width: 100%;
 
@@ -89,19 +92,22 @@ p {
 
 .books {
     margin-top: -3rem;
-    height: 6rem;
+    /* height: 6rem; */
 }
 
 .book-1 {
     background-color: var(--primary-color);
+    height: 6rem;
 }
 
 .book-2 {
     background-color: var(--accent-color);
+    height: 6rem;
 }
 
 .book-3 {
     background-color: var(--secondary-color);
+    height: 6rem;
 }
 
 .books img {
@@ -112,10 +118,6 @@ p {
     color: var(--primary-color);
 }
 
-.left_aside {
-    width: 60rem;
-}
-
 .left_aside>div {
     display: flex;
     flex-direction: column;
@@ -123,16 +125,24 @@ p {
     align-items: center;
     padding: 1rem;
     height: 23%;
+    border: 1px solid #bfd2f85a;
+    transition: all .2s ease;
 }
 
-.left_aside>div:nth-child(2),
+.left_aside>div:hover,
 .left_aside a {
     background-color: var(--primary-color);
     color: var(--accent-color);
+    border-radius: 1rem;
 }
 
 .left_aside a {
     height: 8%;
+    transition: all .2s ease;
+}
+
+.left_aside a:hover {
+    background-color: var(--secondary-color);
 }
 
 .list {
@@ -170,8 +180,7 @@ p {
 }
 
 .appointment_form {
-    background: url(./Assets/images/appointment-bg.png) center / cover no-repeat;
-    height: 85vh;
+    background: url(../images/appointment-bg.png);
     width: 100%;
 }
 
@@ -183,6 +192,7 @@ p {
 
 .appointment_form .bg .container {
     gap: 8rem;
+    margin: 5rem 0 5rem 0;
 }
 
 .appointment_form form {
@@ -219,6 +229,7 @@ select option {
 }
 
 .doctors a {
+    padding: 1rem 0 1rem 0;
     background-color: var(--primary-color);
     color: var(--accent-color);
 }

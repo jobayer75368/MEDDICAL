@@ -7,7 +7,8 @@
     <title>MEDDICAL</title>
     <!-- bootstrap & css cdn  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link rel="stylesheet" href="./Assets/CSS/responsive.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -28,10 +29,10 @@
         <div class="container">
             <div class="topmost bg-white d-flex justify-content-between align-items-center m-2">
                 <div class="logo">
-                    <h1 class="m-0">MED<span>DICAL</span></h1>
+                    <h1 class="m-0 d-none d-sm-block">MED<span>DICAL</span></h1>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <div class="note d-flex gap-4">
+                <div class="d-flex justify-content-center ">
+                    <div class="note d-flex flex-wrap justify-content-center gap-3">
                         <div class="call d-flex align-items-center gap-2">
                             <i class="fa-solid fa-phone-volume"></i>
                             <div class="call_text">
@@ -60,7 +61,8 @@
         <nav>
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="navbar d-flex align-items-center">
-                    <ul class="d-flex list-unstyled gap-4 fs-5 m-0">
+                    <h1 class="m-0 text-white d-lg-none">MED<span>DICAL</span></h1>
+                    <ul class="d-xl-flex d-none d-sm-none list-unstyled gap-4 fs-5 m-0">
                         <li><a class="active_page text-primary text-decoration-none link-primary"
                                 href="index.html">Home</a>
                         </li>
@@ -75,35 +77,41 @@
                 </div>
                 <div class="nav_btns d-flex gap-4">
                     <button class="search_btn bg-transparent border-0 text-white fs-4 px-2 py-1 rounded-5">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass fs-1"></i>
                     </button>
-                    <a class="py-2 px-4 text-decoration-none rounded-5 fw-bold" href="">Appointment</a>
+                    <a class="py-2 px-4 text-decoration-none rounded-5 fw-bold d-none d-sm-block"
+                        href="">Appointment</a>
+                    <button class="bg-transparent border-0 d-sm-block d-lg-none">
+                        <i class="fa-solid fa-bars text-white fs-1"></i>
+                    </button>
                 </div>
+
             </div>
         </nav>
     </header>
     <section id="hero">
-        <div class="container h-100 d-flex align-items-center">
-            <div class="hero_content">
+        <div class="container h-100 d-flex align-items-center ">
+            <div class="hero_content align-items-center text-center text-sm-start">
                 <h5>Caring for Life</h5>
                 <h2>Leading the Way <br>
                     in Medical Excellence</h2>
-                <a class="d-inline-block py-2 px-4 text-decoration-none rounded-5 mt-3 fw-bold" href="">Our Services</a>
+                <a class="d-inline-block py-2 px-4 text-decoration-none rounded-5 mt-3 fs-5 fw-bold" href="">Our
+                    Services</a>
             </div>
         </div>
     </section>
     <div class="books">
-        <div class="container h-100">
-            <div class="d-flex align-items-center justify-content-between h-100 row gap-4">
-                <div class="book-1 col d-flex justify-content-around align-items-center h-100">
+        <div class="container">
+            <div class="row justify-content-between gap-0">
+                <div class="book-1 col-lg-4 col-sm-12 d-flex justify-content-around align-items-center">
                     <p class="text-white">Book an Appointment</p>
                     <img src="./Assets/icons/39.-Calendar.png" alt="Calender">
                 </div>
-                <div class="book-2 col d-flex justify-content-around align-items-center h-100">
+                <div class="book-2 col-lg-3 col-sm-12 d-flex justify-content-around align-items-center">
                     <p>Book an Appointment</p>
                     <img src="./Assets/icons/27.-Team.png" alt="">
                 </div>
-                <div class="book-3 col d-flex justify-content-around align-items-center h-100 w-100">
+                <div class="book-3 col-lg-4 col-sm-12 d-flex justify-content-around align-items-center">
                     <p class="text-white">Book an Appointment</p>
                     <img src="./Assets/icons/15.-Cash.png">
                 </div>
@@ -134,29 +142,29 @@
                 <h5>Care you can believe in</h5>
                 <h3>Our Services</h3>
             </div>
-            <div class="service_content d-flex mt-5">
-                <div class="left_aside border border-ligh">
-                    <div>
+            <div class="service_content d-block d-sm-flex mt-5 px-2 px-sm-0">
+                <div class="left_aside border border-ligh row rounded-4">
+                    <div class="col-6 col-lg-12">
                         <img src="./Assets/icons/medical 1.png" alt="">
                         <p>Free Checkup</p>
                     </div>
-                    <div>
+                    <div class="col-6 col-sm-12">
                         <img src="./Assets/icons/Vector.png" alt="">
                         <p>Cardiogram</p>
                     </div>
-                    <div>
+                    <div class="col-6 col-sm-12">
                         <img src="./Assets/icons/Vector (1).png" alt="">
                         <p>DNA Testing</p>
                     </div>
-                    <div>
+                    <div class="col-6 col-sm-12">
                         <img src="./Assets/icons/Vector (2).png" alt="">
                         <p>Blood Bank</p>
                     </div>
-                    <a class="d-flex w-100 justify-content-center align-items-center" href="">View All</a>
+                    <a class="d-flex w-100 justify-content-center align-items-center col-12" href="">View All</a>
                 </div>
-                <div class="p-4 d-flex flex-column gap-3">
-                    <h4 class="text-black">A passion for putting patients first.</h4>
-                    <div class="list d-flex">
+                <div class="p-4 d-flex flex-column align-items-center gap-3 mt-3">
+                    <h4 class="text-black text-center">A passion for putting patients first.</h4>
+                    <div class="list d-block d-lg-flex">
                         <div class="d-flex flex-column gap-2">
                             <div class="d-flex align-items-center gap-2">
                                 <i class="fa-solid fa-circle"></i>
@@ -195,7 +203,7 @@
                         quo
                         inventore beatae consequuntur sit alias deleniti.</p>
                 </div>
-                <div class="right_aside">
+                <div class="right_aside d-flex d-lg-block flex-column align-items-center gap-4">
                     <img src="./Assets/images/service-1.png" alt="">
                     <img src="./Assets/images/service-2.png" alt="">
                 </div>
@@ -208,51 +216,51 @@
                 <h3>Our Specialties</h3>
             </div>
             <div class="special_grid row text-center mt-5">
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <img src="./Assets/icons/Vector (3).png" alt="">
                     <p>Neurology</p>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <img src="./Assets/icons/Vector (3).png" alt="">
                     <p>Bones</p>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <img src="./Assets/icons/Vector (3).png" alt="">
                     <p>Oncology</p>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <img src="./Assets/icons/Vector (3).png" alt="">
                     <p>Otorhinolaryngology</p>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <img src="./Assets/icons/Vector (3).png" alt="">
                     <p>Ophthalmology</p>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <img src="./Assets/icons/Vector (3).png" alt="">
                     <p>Cardiovascular</p>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <img src="./Assets/icons/Vector (3).png" alt="">
                     <p>Pulmonology</p>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <img src="./Assets/icons/Vector (3).png" alt="">
                     <p>Gynaecology</p>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <img src="./Assets/icons/Vector (3).png" alt="">
                     <p>Renal Medicine</p>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <img src="./Assets/icons/Vector (3).png" alt="">
                     <p>Dermatology</p>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <img src="./Assets/icons/Vector (3).png" alt="">
                     <p>Gastroenterology</p>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <img src="./Assets/icons/Vector (3).png" alt="">
                     <p>Urology</p>
                 </div>
@@ -260,9 +268,9 @@
         </div>
     </section>
     <section class="appointment_form">
-        <div class="bg d-flex align-items-center">
-            <div class="container d-flex align-items-center">
-                <div class="appoinment_text">
+        <div class="bg d-flex align-items-center justify-content-between">
+            <div class="container d-lg-flex flex-column flex-sm-row align-items-center">
+                <div class="appoinment_text text-center text-sm-start">
                     <h3 class="appoinment_head">Book an Appointment</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quia deserunt, est odit atque
                         reprehenderit ex qui minima distinctio nulla reiciendis minus animi quam eius corrupti nobis
@@ -270,15 +278,15 @@
                         soluta deleniti?</p>
                 </div>
                 <form class="d-flex flex-column rounded-3" action="">
-                    <div class="inputs d-flex">
-                        <div>
-                            <input class="bg-transparent text-white border border-ligh p-2" type="text"
+                    <div class="inputs d-block d-lg-flex">
+                        <div class="">
+                            <input class="bg-transparent text-white border border-ligh p-2 w-100" type="text"
                                 placeholder="Name">
-                            <input class=" bg-transparent text-white border border-ligh p-2" placeholder="Email">
+                            <input class=" bg-transparent text-white border border-ligh p-2 w-100" placeholder="Email">
 
-                            <input class=" bg-transparent text-white border border-ligh p-2" type="text" id="datepicker"
-                                placeholder="Date">
-                            <input class=" bg-transparent text-white border border-ligh p-2" type="text"
+                            <input class=" bg-transparent text-white border border-ligh p-2 w-100" type="text"
+                                id="datepicker" placeholder="Date">
+                            <input class=" bg-transparent text-white border border-ligh p-2 w-100" type="text"
                                 placeholder="Doctor">
                         </div>
                         <div>
@@ -287,11 +295,11 @@
                                 <option value="">Male</option>
                                 <option value="">Female</option>
                             </select>
-                            <input class="bg-transparent text-white border border-ligh p-2" type="text"
+                            <input class="bg-transparent text-white border border-ligh p-2 w-100" type="text"
                                 placeholder="Phone">
                             <input class="bg-transparent text-white border border-ligh p-2 w-100" type="time"
                                 placeholder="Time">
-                            <input class="bg-transparent text-white border border-ligh p-2" type="text"
+                            <input class="bg-transparent text-white border border-ligh p-2 w-100" type="text"
                                 placeholder="Department">
                         </div>
                     </div>
@@ -309,7 +317,7 @@
                 <h3>Our Doctors</h3>
             </div>
         </div>
-        <div id="carouselExampleCaptions" class="carousel slide">
+        <div id="carouselExampleCaptions" class="carousel slide mt-5">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="container">
@@ -328,7 +336,7 @@
                                 <a class="d-flex w-100 align-items-center justify-content-center" href="">View
                                     Profile</a>
                             </div>
-                            <div class="col">
+                            <div class="col d-none d-sm-block">
                                 <img class="w-100" src="./Assets/images/doctors/doctor-2.png" alt="doctor-1">
                                 <div class="dr-about d-flex flex-column gap-1 text-center p-2">
                                     <p>Doctor's Name</p>
@@ -342,7 +350,7 @@
                                 <a class="d-flex w-100 align-items-center justify-content-center" href="">View
                                     Profile</a>
                             </div>
-                            <div class="col">
+                            <div class="col d-none d-sm-block">
                                 <img class="w-100" src="./Assets/images/doctors/doctor-3.png" alt="doctor-1">
                                 <div class="dr-about d-flex flex-column gap-1 text-center p-2">
                                     <p>Doctor's Name</p>
@@ -362,7 +370,7 @@
                 <div class="carousel-item">
                     <div class="container">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col d-none d-sm-block">
                                 <img class="w-100" src="./Assets/images/doctors/doctor-1.png" alt="doctor-1">
                                 <div class="dr-about d-flex flex-column gap-1 text-center p-2">
                                     <p>Doctor's Name</p>
@@ -376,7 +384,7 @@
                                 <a class="d-flex w-100 align-items-center justify-content-center" href="">View
                                     Profile</a>
                             </div>
-                            <div class="col-4">
+                            <div class="col">
                                 <img class="w-100" src="./Assets/images/doctors/doctor-2.png" alt="doctor-1">
                                 <div class="dr-about d-flex flex-column gap-1 text-center p-2">
                                     <p>Doctor's Name</p>
@@ -390,7 +398,7 @@
                                 <a class="d-flex w-100 align-items-center justify-content-center" href="">View
                                     Profile</a>
                             </div>
-                            <div class="col">
+                            <div class="col d-none d-sm-block">
                                 <img class="w-100" src="./Assets/images/doctors/doctor-3.png" alt="doctor-1">
                                 <div class="dr-about d-flex flex-column gap-1 text-center p-2">
                                     <p>Doctor's Name</p>
@@ -410,7 +418,7 @@
                 <div class="carousel-item">
                     <div class="container">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col d-none d-sm-block">
                                 <img class="w-100" src="./Assets/images/doctors/doctor-1.png" alt="doctor-1">
                                 <div class="dr-about d-flex flex-column gap-1 text-center p-2">
                                     <p>Doctor's Name</p>
@@ -424,7 +432,7 @@
                                 <a class="d-flex w-100 align-items-center justify-content-center" href="">View
                                     Profile</a>
                             </div>
-                            <div class="col-4">
+                            <div class="col d-none d-sm-block">
                                 <img class="w-100" src="./Assets/images/doctors/doctor-2.png" alt="doctor-1">
                                 <div class="dr-about d-flex flex-column gap-1 text-center p-2">
                                     <p>Doctor's Name</p>
@@ -452,6 +460,7 @@
                                 <a class="d-flex w-100 align-items-center justify-content-center" href="">View
                                     Profile</a>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -486,7 +495,7 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="container">
+                    <div class="container p-5">
                         <div class="row gap-4">
                             <div class="col d-flex gap-4 align-items-center border border-ligh p-0">
                                 <img src="./Assets/images/news.png" alt="...">
@@ -542,7 +551,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="container">
+                    <div class="container p-5">
                         <div class="row gap-4">
                             <div class="col d-flex gap-4 align-items-center border border-ligh p-0">
                                 <img src="./Assets/images/news.png" alt="...">
@@ -598,7 +607,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="container">
+                    <div class="container p-5">
                         <div class="row gap-4">
                             <div class="col d-flex gap-4 align-items-center border border-ligh p-0">
                                 <img src="./Assets/images/news.png" alt="...">
@@ -708,17 +717,17 @@
             </div>
         </div>
     </section>
-    <footer class="py-5 mt-5">
+    <footer class="py-5 mt-5 text-center">
         <div class="container">
-            <div class="d-flex justify-content-between gap-3">
+            <div class="d-flex flex-column flex-sm-row justify-content-between gap-3">
                 <div>
-                    <h2 class="mb-2">MEDDICAL</h2>
-                    <p>Leading the Way in Medical <br>
+                    <h2 class="mb-3">MEDDICAL</h2>
+                    <p class="mb-3">Leading the Way in Medical <br>
                         Execellence, Trusted Care.</p>
                 </div>
                 <div>
                     <p class="fw-bold mb-4">Important Links</p>
-                    <div class="d-flex flex-column gap-1">
+                    <div class="d-flex flex-column gap-1 mb-4">
                         <a href="">Appointment</a>
                         <a href="">Doctors</a>
                         <a href="">Services</a>
@@ -727,7 +736,7 @@
                 </div>
                 <div>
                     <p class="fw-bold mb-4">Contact Us</p>
-                    <div class="d-flex flex-column gap-1">
+                    <div class="d-flex flex-column gap-1 mb-4">
                         <p class="fs-6">Call: (237) 681-812-255</p>
                         <p class="fs-6">Email: fildineesoe@gmail.com</p>
                         <p class="fs-6">Address: 0123 Some place</p>
@@ -741,9 +750,9 @@
                 </div>
             </div>
             <hr class="my-5">
-            <div class="d-flex justify-content-between mb-3">
+            <div class="d-flex flex-column flex-sm-row justify-content-between gap-5 mb-3">
                 <p>© 2021 Hospital’s name All Rights Reserved by PNTEC-LTD</p>
-                <p>
+                <p class="d-flex gap-3  justify-content-center">
                     <i class="fa-brands fa-linkedin"></i>
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
@@ -763,6 +772,7 @@
             $("#datepicker").datepicker();
         });
     </script>
+    <script src="./Assets/JS/script.js"></script>
 </body>
 
 </html>
