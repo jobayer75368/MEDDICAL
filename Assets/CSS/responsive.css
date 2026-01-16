@@ -29,6 +29,11 @@
     font-size: 1.8rem;
 }
 
+.sideBar_header button:hover,
+.sideBar_header button:active {
+    color: var(--secondary-color);
+}
+
 .list_div a {
     display: block;
     width: 100%;
@@ -95,9 +100,7 @@
         grid-template-columns: 1fr;
     }
 
-    .doctor_grid .grid_container a {
-        color: var(--accent-color);
-        background-color: var(--primary-color);
+    header {
+        transition: transform .5s ease;
     }
-
 }
