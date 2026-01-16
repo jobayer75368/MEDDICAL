@@ -1,4 +1,8 @@
 /* initial set up start */
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary-font-family: "Yeseva One", serif;
     --secondary-font-family: "Work Sans", sans-serif;
@@ -50,15 +54,30 @@ a {
     transition: all .3s ease;
 }
 
+.navbar a {
+    color: white;
+}
+
+.navbar .active_page,
+.navbar a:hover {
+    color: var(--secondary-color);
+}
+
 .nav_btns a,
-#hero a {
+.hero_content a {
+    width: 9rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--accent-color);
     color: var(--primary-color);
+    text-decoration: none;
 }
 
 .nav_btns a:hover,
 #hero a:hover {
-    background-color: #79a6ff;
+    background-color: var(--secondary-color);
     color: white;
 }
 
@@ -294,4 +313,81 @@ footer input {
 
 footer button {
     margin-left: -3rem;
+}
+
+/* about page  */
+.about_hero {
+    background: url(../images/about_bg.png);
+}
+
+.service_hero {
+    background: url(../images/service-bg.png);
+}
+
+.contact_hero {
+    background: url(../images/contact-bg.png);
+}
+
+.news_hero {
+    background: url(../images/blog-bg.png);
+}
+
+.page_hero {
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page_hero a {
+    color: var(--primary-color);
+}
+
+.page_hero .bg_blur {
+    color: var(--primary-color);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.64);
+}
+
+/* Comment section  */
+.comment {
+    height: 70vh;
+    background: url(../images/comment.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+.comment .comment_cover {
+    background-color: #1f2b6cb4;
+}
+
+.comment span {
+    display: inline-block;
+    width: 15rem;
+    border: 1px solid var(--accent-color);
+}
+
+/* service page  */
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.grid_head {
+    color: var(--primary-color);
+}
+
+.service_grid a:hover {
+    color: var(--primary-color);
+}
+
+.doctor_grid .grid_container a {
+    padding: 1rem;
+    color: var(--accent-color);
+    background-color: var(--primary-color);
 }

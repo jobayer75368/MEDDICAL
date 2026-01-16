@@ -91,4 +91,13 @@
         height: 13.5rem;
     }
 
+    .grid_container {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor_grid .grid_container a {
+        color: var(--accent-color);
+        background-color: var(--primary-color);
+    }
+
 }
