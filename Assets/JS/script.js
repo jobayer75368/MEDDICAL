@@ -10,8 +10,8 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         if ($(window).width() <= 768) {
-            if ($(window).scrollTop() > 60) {
-                $("header").css("transform", "translateY(-70%)");
+            if ($(window).scrollTop() > 197) {
+                $("header").css("transform", "translateY(-72%)");
             } else {
                 $("header").css("transform", "translateY(0)");
             }
