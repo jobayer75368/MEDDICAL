@@ -391,3 +391,22 @@ footer button {
     color: var(--accent-color);
     background-color: var(--primary-color);
 }
+
+.contact_form form {
+    background-color: var(--primary-color);
+    width: 50%;
+
+}
+
+.contact_form .contact_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.contact_form .contact_grid .contact_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
